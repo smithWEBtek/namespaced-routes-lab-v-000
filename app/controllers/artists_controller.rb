@@ -7,7 +7,7 @@ class ArtistsController < ApplicationController
     @artist = Artist.find(params[:id])
   end
 
-  def new
+	def new
     if params[:allow_create_artists] == true
       @artist = Artist.new
     else
